@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+<title>Dalr's Architecture Portfolio</title>
+
+<!-- fonts -->
+<link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: crosshair;
+}
+
+body {
+  background: #fff;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+ul { list-style-type: none; }
+
+a {
+  color: #b63b4d;
+  text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+
+
+h1 {
+  color: #000;
+  font-size: 45px;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 80px;
+  font-family: 'Roboto Slab', monospace;
+  width: 35%;
+  margin-left: 20%;
+}
+
+section {
+    font-size: 16px;
+    margin-right: 20%;
+    width: 40%;
+    margin-top: 30px;
+    float: right;
+    display: inline-block;
+    text-align: right;
+}
+
+.accordion {
+  width: 100%;
+  max-width: 60%;
+  margin: 30px auto 20px;
+  border-bottom: 2px solid #000;
+}
+
+.accordion .link {
+  cursor: help;
+  display: block;
+  padding: 15px 15px 15px 42px;
+  color: #4D4D4D;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 2px solid #000;
+  position: relative;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+.accordion li i {
+  position: absolute;
+  top: 18px;
+  left: 12px;
+  font-size: 14px;
+  color: #000;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li.open i.fa-plus {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+.submenu {
+  display: none;
+  color: #000;
+}
+
+.submenu a {
+    cursor: pointer;
+}
+
+.isi {
+    display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 12px;
+  padding-left: 42px;
+}
+
+.isi img {
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.isi a {
+    text-decoration: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.linkk a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 12px;
+  padding-left: 42px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.submenu a:hover {
+    font-style:italic;
+}
+
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 100%;
+  width: auto;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 150px;
+  width: 200px;
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.caption p {
+    text-align: center;
+    margin-top: 2px;
+    color: #000;
+}
+
+.smol {
+    font-size: 14px;
+    font-style: italic;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- title -->
+<h1>The Architecture Portfolio of W.L.R.</h1>
+
+<!-- welcome -->
+<section>Welcome to <b>Warda Lutfiah Roihana</b>'s architecture school portfolio. In this archive you can find various projects from my studio assignments that I tried to collect and curate. This archive also served as memento from what I learned within three and a half years of architecture studio in my university. <br>
+<b>Currently the site is still under construction, but the main parts are accessible</b></section><br><br><br><br><br><br><br><br><br>
+
+<!-- Content -->
+<ul id="accordion" class="accordion">
+  <li>
+
+	<!-- higlighted projects -->
+    <div class="link"><i class="fa fa-plus"></i>Highlighted Projects</div>
+    
+    <div class="submenu">
+    
+	<!-- start gallery -->
+    <ul class="gallery-image">
+    <li>
+    <div class="img-box"><a href="/" target="_blank">
+      <img src="https://static.tumblr.com/w7fiimz/rjfqgjo9y/render1.png" alt="" /></a>
+    </div>
+    <div class="caption">
+          <p font-size="16px">Nocturne</p>
+          <p class="smol">Architecture Design 4</p>
+        </div>
+    </li>
+    
+    <li>
+    <div class="img-box">
+      <img src="https://static.tumblr.com/w7fiimz/AL5qgjog4/a.png" alt="" />
+    </div>
+    <div class="caption">
+          <p font-size="16px">Toenemen</p>
+          <p class="smol">Architecture Design 5</p>
+        </div>
+    </li>
+    
+    <li>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250/?image=431" alt="" />
+    </div>
+    <div class="caption">
+          <p font-size="16px">MIROIRMÉMOIRES</p>
+          <p class="smol">Architecture Design 3</p>
+        </div>
+    </li>
+    
+  </ul><!-- gallery-image -->
+  </div><!-- submenu -->
+    
+  </li>
+  
+	<!-- other projects -->
+  <li>  
+    <div class="link"><i class="fa fa-plus"></i>Other Projects</div>
+    <ul class="submenu">
+      <li><div class="isi">COMING SOON</div></li>
+    </ul>
+  </li>
+  
+	<!-- about -->
+  <li>
+    <div class="link"><i class="fa fa-plus"></i>About</div>
+    <ul class="submenu">
+      <li class="isi">
+      <img src="https://static.tumblr.com/w7fiimz/9mxqgjl1u/uuu.jpg"><br>
+      Warda Lutfiah Roihana was born in Ponorogo, 26th November 1997. Has passion in art, design, and digital technology while preserving the history. Graduated with undergraduate bachelor degree of architecture from University of Indonesia in 2020.<br><a href="#"><br>view resume</a> • <a href="https://www.linkedin.com/in/wardalr">LinkedIn</a></li>
+    </ul>
+  </li>
+  
+	<!-- credits -->
+  <li>
+    <div class="link"><i class="fa fa-plus"></i>Credits</div>
+    <ul class="submenu">
+      <li class="isi">This site was designed and coded by <b>Warda Lutfiah Roihana</b>, inspired or using resource from:</li>
+      <li class="linkk"><a href="https://www.jqueryscript.net/menu/Super-Smooth-Accordion-Dropdown-Menu-with-jQuery-CSS3.html">JQuery Accordion Menu Plugin</a></li>
+      <li class="linkk"><a href="https://codepen.io/heyDante/pen/bxEYOw">CSS Gallery</a></li>
+      <li class="linkk"><a href="https://fontawesome.com/">Fontawesome Icon</a></li>
+    </ul>
+  </li>
+</ul><!-- end of content -->
+
+<!-- scripts -->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script>
+$(function() {
+	var Accordion = function(el, multiple) {
+		this.el = el || {};
+		this.multiple = multiple || false;
+
+		var links = this.el.find('.link');
+		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+	}
+
+	Accordion.prototype.dropdown = function(e) {
+		var $el = e.data.el;
+			$this = $(this),
+			$next = $this.next();
+
+		$next.slideToggle();
+		$this.parent().toggleClass('open');
+
+		if (!e.data.multiple) {
+			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+		};
+	}	
+
+	var accordion = new Accordion($('#accordion'), false);
+});
+</script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
